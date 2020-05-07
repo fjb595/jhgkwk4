@@ -2,11 +2,13 @@
 require(dplyr)
 require(utils)
 
-# download and expand arcive containing dataset
-if (!file.exists("ucihar.zip"))
-  download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
-                "ucihar.zip", method="curl")
-unzip("ucihar.zip")
+# download and expand arcive containing dataset if necessary
+if (!dir.exists("UCI HAR Dataset")) {
+  if (!file.exists("ucihar.zip"))
+    download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
+                  "ucihar.zip", method="curl")
+  unzip("ucihar.zip")
+}
 
 #
 # merge the training and the test data to create one data set. (requirement 1)
@@ -50,5 +52,7 @@ harAvg <- har %>% group_by(Subject,Activity) %>% summarize_all( mean )
 #   note: if this behavior is not deseriable, remove or comment the following line:
 names(harAvg)<-c(names(harAvg)[1:2], sapply(names(harAvg)[-(1:2)], function(x) paste("avg",x,sep="")))
 
+# write the output file required by the submission instructions
+write.table(harAvg,"harAvg.txt",row.names = FALSE)
 
 
