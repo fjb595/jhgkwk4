@@ -21,94 +21,94 @@ in order to facilitate further analysis:
   the average of each variable for each activity and each subject.
 
 Two datasets are created by run_analysis.R: har and harAvg.  Both datasets include the subset
-of variables from the UCI HAR dataset listed below.  These variables are described in 
-features_info.txt in the source dataset.  Note: to simplify further analysis, the variable
+of variables from the UCI HAR dataset listed below.  Note: to simplify further analysis, the variable
 names have been converted to lower case and non-alphanumeric characters were removed.
 
 The harAvg dataset consists of the average values of the variables listed below for each
 activity and subject.  Note: 'avg' was prepended to each variable name except for 
 Subject and Activity.
 
+*These variables are described in features_info.txt in the source dataset.*
 
-tbodyaccmeanx
-tbodyaccmeany
-tbodyaccmeanz
-tbodyaccstdx
-tbodyaccstdy
-tbodyaccstdz
-tgravityaccmeanx
-tgravityaccmeany
-tgravityaccmeanz
-tgravityaccstdx
-tgravityaccstdy
-tgravityaccstdz
-tbodyaccjerkmeanx
-tbodyaccjerkmeany
-tbodyaccjerkmeanz
-tbodyaccjerkstdx
-tbodyaccjerkstdy
-tbodyaccjerkstdz
-tbodygyromeanx
-tbodygyromeany
-tbodygyromeanz
-tbodygyrostdx
-tbodygyrostdy
-tbodygyrostdz
-tbodygyrojerkmeanx
-tbodygyrojerkmeany
-tbodygyrojerkmeanz
-tbodygyrojerkstdx
-tbodygyrojerkstdy
-tbodygyrojerkstdz
-tbodyaccmagmean
-tbodyaccmagstd
-tgravityaccmagmean
-tgravityaccmagstd
-tbodyaccjerkmagmean
-tbodyaccjerkmagstd
-tbodygyromagmean
-tbodygyromagstd
-tbodygyrojerkmagmean
-tbodygyrojerkmagstd
-fbodyaccmeanx
-fbodyaccmeany
-fbodyaccmeanz
-fbodyaccstdx
-fbodyaccstdy
-fbodyaccstdz
-fbodyaccmeanfreqx
-fbodyaccmeanfreqy
-fbodyaccmeanfreqz
-fbodyaccjerkmeanx
-fbodyaccjerkmeany
-fbodyaccjerkmeanz
-fbodyaccjerkstdx
-fbodyaccjerkstdy
-fbodyaccjerkstdz
-fbodyaccjerkmeanfreqx
-fbodyaccjerkmeanfreqy
-fbodyaccjerkmeanfreqz
-fbodygyromeanx
-fbodygyromeany
-fbodygyromeanz
-fbodygyrostdx
-fbodygyrostdy
-fbodygyrostdz
-fbodygyromeanfreqx
-fbodygyromeanfreqy
-fbodygyromeanfreqz
-fbodyaccmagmean
-fbodyaccmagstd
-fbodyaccmagmeanfreq
-fbodybodyaccjerkmagmean
-fbodybodyaccjerkmagstd
-fbodybodyaccjerkmagmeanfreq
-fbodybodygyromagmean
-fbodybodygyromagstd
-fbodybodygyromagmeanfreq
-fbodybodygyrojerkmagmean
-fbodybodygyrojerkmagstd
-fbodybodygyrojerkmagmeanfreq
+tbodyaccmeanx  
+tbodyaccmeany  
+tbodyaccmeanz  
+tbodyaccstdx  
+tbodyaccstdy  
+tbodyaccstdz  
+tgravityaccmeanx  
+tgravityaccmeany  
+tgravityaccmeanz  
+tgravityaccstdx  
+tgravityaccstdy  
+tgravityaccstdz  
+tbodyaccjerkmeanx  
+tbodyaccjerkmeany  
+tbodyaccjerkmeanz  
+tbodyaccjerkstdx  
+tbodyaccjerkstdy  
+tbodyaccjerkstdz  
+tbodygyromeanx  
+tbodygyromeany  
+tbodygyromeanz  
+tbodygyrostdx  
+tbodygyrostdy  
+tbodygyrostdz  
+tbodygyrojerkmeanx  
+tbodygyrojerkmeany  
+tbodygyrojerkmeanz  
+tbodygyrojerkstdx  
+tbodygyrojerkstdy  
+tbodygyrojerkstdz  
+tbodyaccmagmean  
+tbodyaccmagstd  
+tgravityaccmagmean  
+tgravityaccmagstd  
+tbodyaccjerkmagmean  
+tbodyaccjerkmagstd  
+tbodygyromagmean  
+tbodygyromagstd  
+tbodygyrojerkmagmean  
+tbodygyrojerkmagstd  
+fbodyaccmeanx  
+fbodyaccmeany  
+fbodyaccmeanz  
+fbodyaccstdx  
+fbodyaccstdy  
+fbodyaccstdz  
+fbodyaccmeanfreqx  
+fbodyaccmeanfreqy  
+fbodyaccmeanfreqz  
+fbodyaccjerkmeanx  
+fbodyaccjerkmeany  
+fbodyaccjerkmeanz  
+fbodyaccjerkstdx  
+fbodyaccjerkstdy  
+fbodyaccjerkstdz  
+fbodyaccjerkmeanfreqx  
+fbodyaccjerkmeanfreqy  
+fbodyaccjerkmeanfreqz  
+fbodygyromeanx  
+fbodygyromeany  
+fbodygyromeanz  
+fbodygyrostdx  
+fbodygyrostdy  
+fbodygyrostdz  
+fbodygyromeanfreqx  
+fbodygyromeanfreqy  
+fbodygyromeanfreqz  
+fbodyaccmagmean  
+fbodyaccmagstd  
+fbodyaccmagmeanfreq  
+fbodybodyaccjerkmagmean  
+fbodybodyaccjerkmagstd  
+fbodybodyaccjerkmagmeanfreq  
+fbodybodygyromagmean  
+fbodybodygyromagstd  
+fbodybodygyromagmeanfreq  
+fbodybodygyrojerkmagmean  
+fbodybodygyrojerkmagstd  
+fbodybodygyrojerkmagmeanfreq  
 
 
 UCI HAR dataset URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
@@ -116,31 +116,3 @@ UCI HAR dataset URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfile
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-UCI Har URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
