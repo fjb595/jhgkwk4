@@ -43,7 +43,7 @@ har<-cbind("Subject"=subject$V1,har)
 
 # Use descriptive activity names to name the activities in the data set (requirement 3)
 activityLabels<- read.table(file.path(dataPath,"activity_labels.txt"))$V2 %>% tolower %>% sub("_","",.)
-x$Activity=cut(har$Activity,breaks=c(0:length(activityLabels)),labels=activityLabels)
+har$Activity=cut(har$Activity,breaks=c(0:length(activityLabels)),labels=activityLabels)
 
 # create a second, independent tidy data set with the average of each variable for each activity and each subject. (requirement 5)
 harAvg <- har %>% group_by(Subject,Activity) %>% summarize_all( mean )
